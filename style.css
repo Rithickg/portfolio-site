@@ -1,0 +1,296 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        text-decoration: none;
+    }
+    /* navbar style */
+    
+    .navbar {
+        position: fixed;
+        width: 100%;
+        padding: 15px 0 0 0;
+        background-color: black;
+        font-family: 'sans-serif', 'ubuntu';
+    }
+    
+    .max-width {
+        max-width: 1300px;
+        padding: 0 80px;
+        margin: auto;
+    }
+    
+    .navbar .max-width {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .navbar .logo a {
+        font-size: 35px;
+        font-weight: 600;
+        color: whitesmoke;
+        margin-left: 100px;
+        display: inline-block;
+    }
+    
+    .navbar .logo a span {
+        color: red;
+    }
+    
+    .navbar .menu .menu-btn {
+        display: none;
+    }
+    
+    .navbar .menu {
+        float: right;
+        margin-right: 15px;
+        position: relative;
+        top: -28px;
+    }
+    
+    .navbar .menu li {
+        list-style: none;
+        display: inline-block;
+    }
+    
+    .navbar .menu li a {
+        color: white;
+        font-size: 20px;
+        font-weight: 600;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    
+    .navbar .menu li a:hover {
+        color: red;
+    }
+    /* menu button */
+    /* home section style */
+    
+    .home {
+        display: flex;
+        background-image: url(image/Untitled\ design\ \(1\).png);
+        background-size: cover;
+        height: 100vh;
+        width: 100%;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: #fff;
+        min-height: 500px;
+        font-family: "sans-serif", "ubuntu";
+    }
+    
+    .home .max-width {
+        margin: auto 0 auto 40px;
+    }
+    
+    .home .home-content .text-1 {
+        font-size: 27px;
+    }
+    
+    .home .home-content .text-2 {
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    
+    .home .home-content .text-3 {
+        font-size: 40px;
+        margin: 5px 0;
+    }
+    
+    .home .home-content .text-3 span {
+        color: red;
+    }
+    
+    .navbar .btn img {
+        float: right;
+        display: none;
+    }
+    /* media quary */
+    
+    @media (max-width:320px) {
+        .navbar .btn img {
+            display: block;
+            position: relative;
+            bottom: 30px;
+        }
+        .navbar .menu li a {
+            display: none;
+        }
+        .about .about-text {
+            border: 3px solid;
+            padding: 10px;
+        }
+        .about .about-text p {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 550;
+            word-wrap: break-word;
+        }
+    }
+    
+    @media (max-width:962px) {
+        .navbar .btn img {
+            display: block;
+            position: relative;
+            bottom: 30px;
+        }
+        .navbar .menu li a {
+            display: none;
+        }
+        .about .about-text {
+            border: 3px solid;
+            padding: 10px;
+        }
+        .about .about-text p {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 550;
+            word-wrap: break-word;
+        }
+    }
+    
+    .about .max-width {
+        text-align: center;
+        overflow: hidden;
+    }
+    
+    .about .about-content {
+        position: relative;
+        text-align: center;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-size: 25px;
+        font-family: sans-serif;
+        margin-top: 25px;
+        font-family: sans-serif;
+    }
+    
+    .about .about-content::before {
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background-color: red;
+        transform: translateX(-50%);
+    }
+    
+    .about .about-content::after {
+        content: "---- Who am I ----";
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        font-size: 22px;
+        width: 180px;
+        height: 3px;
+        color: black;
+        font-weight: 600;
+        font-family: sans-serif;
+        transform: translateX(-50%);
+    }
+    
+    .about .about-text {
+        border: 3px solid;
+        padding: 20px;
+        margin: 0 auto 0 auto;
+    }
+    
+    .about .about-text p {
+        font-family: sans-serif;
+        font-size: 35px;
+        font-weight: 550;
+        word-break: normal;
+        word-wrap: break-word;
+    }
+    
+    .resume {
+        height: auto;
+        text-align: center;
+        background: rgb(15, 7, 8);
+        background: linear-gradient(90deg, rgba(15, 7, 8, 1) 0%, rgba(16, 212, 244, 1) 55%, rgba(25, 25, 25, 1) 100%);
+        width: 230px;
+        margin: 15px auto;
+        border-radius: 30px;
+    }
+    
+    .resume p {
+        font-size: 25px;
+        padding-top: 10px;
+        font-family: sans-serif;
+        font-weight: 600;
+        color: greenyellow;
+    }
+    
+    .foot .ft {
+        height: auto;
+        background-color: #212224;
+    }
+    
+    .foot .ft h1 {
+        text-align: center;
+        font-size: 35px;
+        font-family: sans-serif;
+        padding-top: 30px;
+        color: white;
+    }
+    
+    .foot .ft .social {
+        margin-top: 80px;
+    }
+    
+    .foot .ft .social a {
+        padding-left: 11%;
+        margin-right: 11%;
+    }
+    
+    .foot .ft .social img {
+        height: 35px;
+        width: 35px;
+        margin-bottom: 30px;
+    }
+    
+    .foot .ft p {
+        font-size: 20px;
+        font-weight: 500;
+        font-family: sans-serif;
+        text-align: center;
+        color: white;
+        padding-bottom: 3px;
+    }
+    
+    .skill .sk {
+        height: auto;
+        width: 100%;
+        background: rgb(2, 0, 8);
+        background: linear-gradient(90deg, rgba(2, 0, 8, 1) 0%, rgba(217, 23, 50, 1) 73%, rgba(25, 25, 25, 1) 100%);
+    }
+    
+    .skill .sk h1 {
+        text-align: center;
+        font-family: "sans-serif";
+        padding-top: 25px;
+        color: white;
+        font-size: 55px;
+    }
+    
+    .skill .sk ul {
+        padding: 5px;
+        text-align: center;
+        font-size: 35px;
+        font-weight: 500;
+    }
+    
+    .skill .sk ul li {
+        padding-top: 12px;
+        list-style: square;
+        padding-bottom: 12px;
+        color: black;
+        font-family: "sans-serif", "ubuntu";
+        margin-bottom: 15px;
+    }
